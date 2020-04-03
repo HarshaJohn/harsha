@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.Adactin.runner.AdactinRunner
+-------------------------------------------------------------------------------
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.604 s - in com.Adactin.runner.AdactinRunner
