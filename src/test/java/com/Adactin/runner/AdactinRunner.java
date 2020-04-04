@@ -13,9 +13,10 @@ import cucumber.api.junit.Cucumber;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src//test//java//com//Adactin//feature", 
+@CucumberOptions(features = "src//test//java//com//Adactin//feature//Adactin.feature", 
 glue = "com\\Adactin\\stepdefinition", 
-plugin = {"pretty", "html:Report", "com.cucumber.listener.ExtentCucumberFormatter:Report//extentReport.html"}, 
+plugin = {"pretty", "html:Report", "com.cucumber.listener.ExtentCucumberFormatter:Report//extentReport.html",
+		"rerun: Report//failedtestcase.txt"}, 
 monochrome = false, 
 dryRun = false, 
 strict = true)
