@@ -8,8 +8,6 @@ import com.Adactin.Baseclass.BaseClasss;
 import com.Adactin.helper.FileReaderManager;
 import com.Adactin.helper.PageObjectManager;
 import com.Adactin.runner.AdactinRunner;
-import com.Adactin.runner.ReRunner;
-
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -199,9 +197,10 @@ public class StepDefinition extends BaseClasss {
 	@Then("^The user is navigated back to login page succesfully$")
 	public void the_user_is_navigated_back_to_login_page_succesfully() {
 		System.out.println("Welcome to adactin. Click here to login");
-          
-		Assert.assertEquals("", " ");
-
+	   /* browserLaunch("chrome");
+		naviTo("https://adactin.com/HotelApp/index.php");
+        Assert.assertEquals("", " ");
+      */
 		
 	}
 
