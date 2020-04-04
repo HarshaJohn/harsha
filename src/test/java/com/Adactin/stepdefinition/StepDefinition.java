@@ -30,15 +30,15 @@ public class StepDefinition extends BaseClasss {
 
 	@When("^user enters \"(.*?)\" usernamefield$")
 	public void user_enters_usernamefield(String usrname) throws Throwable {
-		sendText(pom.getLp().getUname(), usrname);	
+		sendText(pom.getLp().getUname(), usrname);
 
 	}
 
 	@When("^user enters \"(.*?)\" in password$")
 	public void user_enters_in_password(String pwd) throws Throwable {
 		sendText(pom.getLp().getPwd(), pwd);
-		//sendText(pom.lp.getUname(), "harshansti");
-		//sendText(pom.lp.getPwd(), "1234567");
+		// sendText(pom.lp.getUname(), "harshansti");
+		// sendText(pom.lp.getPwd(), "1234567");
 
 	}
 
@@ -135,7 +135,7 @@ public class StepDefinition extends BaseClasss {
 
 	@When("^User enters \"(.*?)\" in the name field$")
 	public void user_enters_in_the_name_field(String fname) throws Throwable {
-		sendText(pom.getBp().getFname(), fname );
+		sendText(pom.getBp().getFname(), fname);
 
 	}
 
@@ -183,7 +183,8 @@ public class StepDefinition extends BaseClasss {
 	}
 
 	@Then("^The user confirms that the booking is confirmed and is navigated to the confirmation acknowledgement page$")
-	public void the_user_confirms_that_the_booking_is_confirmed_and_is_navigated_to_the_confirmation_acknowledgement_page() throws InterruptedException {
+	public void the_user_confirms_that_the_booking_is_confirmed_and_is_navigated_to_the_confirmation_acknowledgement_page()
+			throws InterruptedException {
 		System.out.println("booking is successful");
 		Thread.sleep(4000);
 
@@ -197,11 +198,10 @@ public class StepDefinition extends BaseClasss {
 	@Then("^The user is navigated back to login page succesfully$")
 	public void the_user_is_navigated_back_to_login_page_succesfully() {
 		System.out.println("Welcome to adactin. Click here to login");
-	   /* browserLaunch("chrome");
+		browserLaunch("chrome");
 		naviTo("https://adactin.com/HotelApp/index.php");
-        Assert.assertEquals("", " ");
-      */
-		
+		Assert.assertEquals("", " ");
+
 	}
 
 }
